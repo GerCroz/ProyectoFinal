@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./Estilos/style.css">
+    <link rel="stylesheet" type="text/css" href="./Estilos/graf-circular.css">
+    <title>Portfolio Crozy German</title>
+</head>
+<body>
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" onclick="seleccionar(this)" >INICIO</a></li>
+                            <li><a href="#sobre-mi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <h1>PORTFOLIO</h1>
+
+                    <!-- iconos del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>German Crozy<hr></span></h2>
+                <h3>Desarrollador FrontEnd</h3>        
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- Seccion sobre el Programador -->
+    <section id="sobre-mi">
+
+        <div class="sobre-mi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>
+                Hola, soy <span>German Crozy</span>
+            </h2>
+            <h3>Analista de Sistemas y Desarrollador FrontEnd</h3>
+            
+            <p>
+                Me gusta aprender constantemente sobre nuevas tecnología, 
+                estar siempre actualizado de lo ultimo y mas moderno. 
+                Entender las herramientas que utilizo. 
+                Crecer constantemente tanto en el ámbito laboral como en el estudio. 
+                Todos los días se aprende algo nuevo.
+                                
+            </p>
+        </div>        
+        <div class="contenedor-foto">
+            <img src="./imagenes/Perfil2.png" alt="Foto formal para perfil">
+        </div> 
+    </section>
+
+    <!-- Seccion mis habilidades -->
+    <div class="contenedor-habilidades" id="habilidades">
+        <h3>HABILIDADES</h3>
+        <div class="habilidades"> 
+            <div id="Columna1">
+                <h2>Analisis de Sistemas</h2>          
+                <div class="progress-circle over50 p90">
+                    <span>90%</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div> 
+                <h2>HTML</h2>           
+                <div class="progress-circle over50 p85">
+                    <span>85%</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+            </div> 
+        </div>
+        <div id="Columna2">
+                <h2>CSS</h2>          
+                <div class="progress-circle over50 p85">
+                <span>85%</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div>
+                <h2>JAVASCRIPT</h2>
+                <div class="progress-circle over50 p75">
+                        <span>75%</span>
+                        <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion Proyectos  -->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./imagenes/Proyectos.PNG" alt="Imagen de fondo de porfolio personal">
+                <div class="info">
+                    <h4>Portfolio Personal</h4>
+                    <p>Diseño Web -HTML CSS JAVASCRIPT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion contacto con el Programador -->
+    <section id="contacto">
+
+        <div class="contacto">
+            <p class="titulo-seccion">Contacto</p>
+            <h2>
+                Telefono:  <span>+54 370 4391033</span>
+            </h2>
+            <h2>
+                E-mail: <span>Germanraulcrozy@gmail.com</span>
+            </h2>
+            <h2>
+                Github: <span>German Crozy</span>
+                <a href="https://github.com/GerCroz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </h2>
+            <h2>
+                Linkedin: <span>German Crozy</span>
+                <a href="https://www.linkedin.com/in/german-crozy-0b680124b/?trk=public-profile-join-page" 
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </h2>
+
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <p>Crozy German - 2023</p>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="/funciones/index.js"></script>
+</body>
+</html>
